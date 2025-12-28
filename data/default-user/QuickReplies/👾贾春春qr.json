@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "name": "👾贾春春qr",
+    "disableSend": false,
+    "placeBeforeInput": false,
+    "injectInput": false,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 2,
+            "showLabel": false,
+            "label": "📱小手机",
+            "title": "",
+            "message": "/sendas name={{char}} \n<bear>\n</bear>",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        },
+        {
+            "id": 4,
+            "showLabel": false,
+            "label": "💬帖子",
+            "title": "",
+            "message": "查看帖子",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 4
+}

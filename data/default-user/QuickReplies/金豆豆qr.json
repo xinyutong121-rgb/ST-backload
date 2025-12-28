@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "name": "金豆豆qr",
+    "disableSend": true,
+    "placeBeforeInput": false,
+    "injectInput": true,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 2,
+            "showLabel": false,
+            "label": "诺基亚",
+            "title": "",
+            "message": "打开手机",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        },
+        {
+            "id": 4,
+            "showLabel": false,
+            "label": "回复消息",
+            "title": "",
+            "message": "回复金豆豆：{{input}}",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 4
+}

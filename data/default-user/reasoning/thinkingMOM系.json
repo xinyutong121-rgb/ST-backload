@@ -1,0 +1,6 @@
+{
+    "name": "thinkingMOM系",
+    "prefix": "<!-- Start the ECoT -->\n<thinking>\n",
+    "suffix": "\n</thinking>\n<!-- End of The ECoT -->",
+    "separator": "\n\n"
+}

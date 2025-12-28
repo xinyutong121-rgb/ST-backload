@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "name": "白塔qr",
+    "disableSend": false,
+    "placeBeforeInput": false,
+    "injectInput": true,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 1,
+            "showLabel": false,
+            "label": "📱终端",
+            "title": "",
+            "message": "/sendas name={{char}}\n【白塔通讯终端】",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        },
+        {
+            "id": 7,
+            "showLabel": false,
+            "label": "💻️论坛",
+            "title": "",
+            "message": "查看白塔论坛<Request：严格按论坛格式要求输出，禁止输出正文剧情、角色状态栏等其他内容，禁止使用颜文字>",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 7
+}

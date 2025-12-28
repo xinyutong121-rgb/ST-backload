@@ -1,0 +1,63 @@
+{
+    "version": 2,
+    "name": "纪叙qr",
+    "disableSend": false,
+    "placeBeforeInput": false,
+    "injectInput": false,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 2,
+            "showLabel": false,
+            "label": "老哥消息",
+            "title": "",
+            "message": "查看纪叙发来的消息",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "automationId": ""
+        },
+        {
+            "id": 10,
+            "showLabel": false,
+            "label": "妈妈消息",
+            "title": "",
+            "message": "查看妈妈发来的消息",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "automationId": ""
+        },
+        {
+            "id": 6,
+            "showLabel": false,
+            "label": "查看群聊",
+            "title": "",
+            "message": "查看相亲相爱一家人发来的消息",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 10
+}

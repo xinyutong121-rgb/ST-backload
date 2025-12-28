@@ -1,0 +1,6 @@
+{
+    "name": "think",
+    "prefix": "<think>",
+    "suffix": "\n</think>",
+    "separator": ""
+}

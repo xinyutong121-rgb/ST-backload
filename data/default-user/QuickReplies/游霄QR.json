@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "name": "游霄QR",
+    "disableSend": false,
+    "placeBeforeInput": false,
+    "injectInput": false,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 2,
+            "showLabel": false,
+            "label": "虹城市车神",
+            "title": "",
+            "message": "/buttons labels=[\"查看消息\",\"回复消息\",\"查看日记\",\"个人主页\",\"社交动态\",\"发布动态\",\"偷看群聊\"] 虹城市车神 |\n/setvar key=option ||\n/if left=option rule=eq right=\"\" {: /flushvar option | /abort :} ||\n/if left=option rule=eq right=\"查看消息\" {: /send 查看{{char}}发来的消息 :} ||\n/if left=option rule=eq right=\"回复消息\" {: /send 回复和{{char}}的聊天 ：{{input}}:} ||\n/if left=option rule=eq right=\"查看日记\" {: /send 查看{{char}}的日记 :} ||\n/if left=option rule=eq right=\"个人主页\" {: /send 查看{{char}}的动态主页 :} ||\n/if left=option rule=eq right=\"社交动态\" {: /send 查看社交动态 :} ||\n/if left=option rule=eq right=\"发布动态\" {: /send 发布动态内容：{{input}} :} ||\n/if left=option rule=eq right=\"偷看群聊\" {: /send 偷看群聊内容 :} ||\n/flushvar option ||\n/trigger||",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 12
+}
