@@ -1,6 +1,46 @@
 {
-    "extensions": {},
-    "temperature": 1,
+    "chat_completion_source": "custom",
+    "openai_model": "gpt-4-turbo",
+    "claude_model": "claude-3-5-sonnet-20240620",
+    "openrouter_model": "OR_Website",
+    "openrouter_use_fallback": false,
+    "openrouter_group_models": false,
+    "openrouter_sort_models": "alphabetically",
+    "openrouter_providers": [],
+    "openrouter_allow_fallbacks": true,
+    "openrouter_middleout": "on",
+    "ai21_model": "jamba-1.5-large",
+    "mistralai_model": "mistral-large-latest",
+    "cohere_model": "command-r",
+    "perplexity_model": "llama-3-70b-instruct",
+    "groq_model": "llama3-70b-8192",
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "custom_model": "gemini-2.5-pro-preview-06-05",
+    "custom_url": "https://capi.cntest.us/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "custom_prompt_post_processing": "strict_tools",
+    "google_model": "gemini-2.5-pro-preview-06-05",
+    "vertexai_model": "gemini-2.0-flash-001",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
+    "temperature": 0.7,
     "frequency_penalty": 0.3,
     "presence_penalty": 0.3,
     "top_p": 1,
@@ -8,7 +48,7 @@
     "top_a": 0,
     "min_p": 0,
     "repetition_penalty": 1,
-    "openai_max_context": 2000000,
+    "openai_max_context": "545983",
     "openai_max_tokens": 20000,
     "wrap_in_quotes": false,
     "names_behavior": 0,
@@ -19,6 +59,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[从上次结束的地方继续]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -328,7 +370,7 @@
             "marker": false,
             "name": "✉字数要求",
             "role": "system",
-            "content": "{{setvar::正文要求::\n- 以<content>包裹此次小说正文内容\n- 创作2000-2300字小说内容(仅正文字数)\n- 使用**简体中文**，对话中禁止出现英文单词\n}}\n{{//或者改成 使用英文与中文双语输出，对话中输出英文和中文翻译，旁白为中文↑\n玩手机，直播这种特殊格式最好关。\n}}\n\n",
+            "content": "{{setvar::正文要求::\n- 以<content>包裹此次小说正文内容\n- 创作1600-2100字小说内容(仅正文字数)\n- 使用**简体中文**，对话中禁止出现英文单词\n}}\n{{//或者改成 使用英文与中文双语输出，对话中输出英文和中文翻译，旁白为中文↑\n玩手机，直播这种特殊格式最好关。\n}}\n\n",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -870,7 +912,7 @@
                 },
                 {
                     "identifier": "fa72d34f-2e63-4329-923c-c930779bbbfa",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "5c2bbce6-8814-4220-9669-a492f1a7e523",
@@ -962,7 +1004,7 @@
                 },
                 {
                     "identifier": "9b1f4a1b-4686-4db6-a0c5-4c3fa4ac03e8",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "7b99feee-fd02-4508-89a2-f9d0d851ebbe",
@@ -974,11 +1016,11 @@
                 },
                 {
                     "identifier": "3792c858-dcc4-45d0-b706-38080d578ed1",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "02b0ba99-7080-459c-a295-7b90de85973b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "a4586108-76a8-4be6-81cc-8938732b31c4",
@@ -990,11 +1032,11 @@
                 },
                 {
                     "identifier": "9deea551-e09b-47eb-a576-bea95c9ea8e7",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "74ba2810-f9fa-4603-b0fc-37597f5c9ae8",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "f08a3e56-cfe9-4ba6-8437-0602763c8124",
@@ -1014,7 +1056,7 @@
                 },
                 {
                     "identifier": "fb6ac8b1-613d-4981-8e98-e9d9142e2f5b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "9e3f4751-c02b-47ff-8f65-162392bc5152",
@@ -1091,15 +1133,21 @@
             ]
         }
     ],
+    "show_external_models": true,
     "assistant_prefill": "",
     "assistant_impersonation": "",
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": true,
+    "vertexai_auth_mode": "express",
+    "vertexai_region": "us-central1",
+    "vertexai_express_project_id": "",
     "squash_system_messages": false,
     "image_inlining": true,
     "inline_image_quality": "low",
     "video_inlining": false,
-    "continue_prefill": false,
+    "audio_inlining": true,
+    "bypass_status_check": true,
+    "continue_prefill": true,
     "continue_postfix": " ",
     "function_calling": false,
     "show_thoughts": true,
@@ -1107,5 +1155,8 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "extensions": {
+        "regex_scripts": []
+    }
 }

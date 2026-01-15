@@ -1,5 +1,5 @@
 {
-    "chat_completion_source": "custom",
+    "chat_completion_source": "makersuite",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "openrouter_model": "OR_Website",
@@ -26,13 +26,13 @@
     "cometapi_model": "gpt-4o",
     "zai_model": "glm-4.6",
     "zai_endpoint": "common",
-    "custom_model": "claude-opus-4-5-20251101",
-    "custom_url": "https://capi.cntest.us/v1",
+    "custom_model": "[流式抗截断]gemini-2.5-pro-maxthinking",
+    "custom_url": "http://171.80.2.162:3000/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
-    "custom_prompt_post_processing": "strict_tools",
-    "google_model": "gemini-2.5-pro-preview-06-05",
+    "custom_prompt_post_processing": "strict",
+    "google_model": "gemini-2.5-pro-maxthinking",
     "vertexai_model": "gemini-2.0-flash-001",
     "nanogpt_model": "gpt-4o-mini",
     "deepseek_model": "deepseek-chat",
@@ -59,8 +59,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "",
-    "proxy_password": "",
+    "reverse_proxy": "https://gcli.ggchan.dev/v1",
+    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -2729,7 +2729,7 @@
                 },
                 {
                     "identifier": "6fedb376-7525-4903-a06f-0e0553ce806e",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "0228391a-cb44-4e15-a9c9-1d0f4bb11ef9",
@@ -2925,7 +2925,7 @@
                 },
                 {
                     "identifier": "3a3977dd-05b3-415e-8c79-c486c90107ff",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "f93ded50-9abf-4c36-8ff9-cc73554e6cae",
