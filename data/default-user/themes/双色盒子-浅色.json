@@ -9,7 +9,7 @@
     "chat_tint_color": "rgba(255, 255, 255, 0)",
     "user_mes_blur_tint_color": "rgba(245, 235, 255, 0.9)",
     "bot_mes_blur_tint_color": "rgba(205, 234, 255, 0.8)",
-    "shadow_color": "rgba(119, 127, 126, 1)",
+    "shadow_color": "rgba(181, 191, 190, 1)",
     "shadow_width": 0,
     "border_color": "rgba(235, 254, 255, 1)",
     "font_scale": 0.85,

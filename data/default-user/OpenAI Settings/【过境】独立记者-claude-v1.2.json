@@ -2372,11 +2372,11 @@
                 },
                 {
                     "identifier": "647aa5e0-3e53-4208-ab2b-559c4f21488f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9a0b3997-0382-4c6d-9586-cf4dcbe06b0b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "2c8c7fa4-ba6b-44fc-938e-b8cc80b53f9e",
@@ -2552,7 +2552,7 @@
                 },
                 {
                     "identifier": "26b1a7ab-887f-47c1-8f95-ec1d60f061b8",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "dd5abd60-0d01-4f02-9dd8-fea34ef6540c",
@@ -2775,7 +2775,7 @@
                 "placement": [
                     1
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2792,7 +2792,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2809,7 +2809,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2827,7 +2827,7 @@
                     1,
                     2
                 ],
-                "disabled": true,
+                "disabled": false,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -2867,7 +2867,7 @@
                         "placement": [
                             1
                         ],
-                        "disabled": true,
+                        "disabled": false,
                         "markdownOnly": false,
                         "promptOnly": true,
                         "runOnEdit": true,
@@ -2884,7 +2884,7 @@
                         "placement": [
                             2
                         ],
-                        "disabled": true,
+                        "disabled": false,
                         "markdownOnly": true,
                         "promptOnly": true,
                         "runOnEdit": true,
@@ -2901,7 +2901,7 @@
                         "placement": [
                             2
                         ],
-                        "disabled": true,
+                        "disabled": false,
                         "markdownOnly": false,
                         "promptOnly": true,
                         "runOnEdit": true,
@@ -2919,7 +2919,7 @@
                             1,
                             2
                         ],
-                        "disabled": true,
+                        "disabled": false,
                         "markdownOnly": false,
                         "promptOnly": true,
                         "runOnEdit": true,

@@ -26,13 +26,13 @@
     "cometapi_model": "gpt-4o",
     "zai_model": "glm-4.6",
     "zai_endpoint": "common",
-    "custom_model": "claude-opus-4-5-20251101-thinking",
-    "custom_url": "https://api.dzzi.ai/v1",
+    "custom_model": "[cli]gemini-3-pro-preview",
+    "custom_url": "http://172.98.22.45:3000/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
-    "custom_prompt_post_processing": "strict_tools",
-    "google_model": "gemini-2.5-pro-maxthinking",
+    "custom_prompt_post_processing": "strict",
+    "google_model": "gemini-2.5-pro-nothinking",
     "vertexai_model": "gemini-2.0-flash-001",
     "nanogpt_model": "gpt-4o-mini",
     "deepseek_model": "deepseek-chat",
@@ -2617,7 +2617,7 @@
                 },
                 {
                     "identifier": "ec1e8bad-a3ab-4ba1-9ab7-9ced2d08692e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "22e80229-f65b-46a3-b871-6fde1133c61f",
@@ -2745,7 +2745,7 @@
                 },
                 {
                     "identifier": "cc196a0b-f4a3-4467-8f1a-24970a1e420b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "8cc87c1d-5a4b-4931-89cd-c9e5d1e29b3b",
@@ -2769,15 +2769,15 @@
                 },
                 {
                     "identifier": "c7ec9cb3-bcbc-4d05-ac73-dbf4e9dc22c0",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "46d514e6-c5b3-4379-8c6d-2e0430fa6a8f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9d32d140-78f6-488a-b4f8-490f0c6f1e68",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "3360be34-254e-40fa-84d6-b087439e2fb4",
@@ -2865,7 +2865,7 @@
                 },
                 {
                     "identifier": "c9bb0f4b-8175-42b6-86ef-6d1c663cbb7e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "48ab55ff-4bfb-4652-87a6-e0a1d843f572",

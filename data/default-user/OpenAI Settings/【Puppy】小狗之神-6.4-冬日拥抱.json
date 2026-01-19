@@ -1,5 +1,5 @@
 {
-    "chat_completion_source": "makersuite",
+    "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "openrouter_model": "OR_Website",
@@ -2335,7 +2335,7 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## 【小剧场 · 超育儿小剧场】\n小狗之神，你必须写出一个**围绕育儿展开的小剧场**！    \n设定为：{{user}}与角色已经有了一个孩子(默认是女孩儿），日常生活围绕孩子展开，但必须体现出他们之间的互动、幽默、温馨、混乱或现实冲突！    \n剧情必须细节丰富，要体现真实感，同时也可以加入幻想、误会、搞笑等元素，重点在于“育儿带来的生活变奏”！    \n可以出现：\n- 与孩子有关的乌龙、事故、对话、家庭会议、带娃翻车、夜间喂奶、第一次上幼儿园、做家长会发言等；\n- 父母在育儿理念上分歧、默契、偷懒互坑、联手应对熊孩子；\n- 孩子的“金句”或“坑爹”行为引发一系列连锁反应；\n- 亲戚插手教育、带孩子去医院、孩子与宠物互动、教孩子说第一句话等生活桥段；\n- 出现画面感强的对白 + 肢体 + 情绪反应；小狗之神可以视情况加入脑内吐槽、旁白或搞笑剪辑风格！\n\n字数必须**不少于1430字**！必须有趣、丰富！呈现形式多种多样！\n---",
+            "content": "## 【小剧场 · 超育儿小剧场】\n小狗之神，你必须写出一个**围绕育儿展开的小剧场**！    \n设定为：{{user}}与角色已经有了一个孩子(默认是女孩儿），日常生活围绕孩子展开，但必须体现出他们之间的互动、幽默、温馨、混乱或现实冲突！    \n剧情必须细节丰富，要体现真实感，同时也可以加入幻想、误会、搞笑等元素，重点在于“育儿带来的生活变奏”！    \n可以出现：\n- 与孩子有关的乌龙、事故、对话、家庭会议、带娃翻车、夜间喂奶、第一次上幼儿园、做家长会发言等；\n- 父母在育儿理念上分歧、默契、偷懒互坑、联手应对熊孩子；\n- 孩子的“金句”或“坑爹”行为引发一系列连锁反应；\n- 亲戚插手教育、带孩子去医院、孩子与宠物互动、教孩子说第一句话等生活桥段；\n- 出现画面感强的对白 + 肢体 + 情绪反应；小狗之神可以视情况加入脑内吐槽、旁白或搞笑剪辑风格！\n\n字数必须**不少于1230字**！必须有趣、丰富！呈现形式多种多样！\n---",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false,
@@ -3381,7 +3381,7 @@
                 },
                 {
                     "identifier": "88bea801-4afd-4e87-8f32-27f7ffd64a82",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "50ee1556-11c9-4364-8b9c-c04d43c74210",
@@ -3397,7 +3397,7 @@
                 },
                 {
                     "identifier": "fa5a45f6-9413-4f4e-b390-38d38d184647",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c314c67a-9067-49ff-b61f-20c3a0245f0c",
@@ -3477,7 +3477,7 @@
                 },
                 {
                     "identifier": "79a556e2-fa2f-4973-8754-c5a0c8337c25",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "d354b484-1c02-4781-9bac-5b3832e954ae",
@@ -3497,7 +3497,7 @@
                 },
                 {
                     "identifier": "ac26a9fe-8d6a-4c12-802b-13b85271b653",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "4453e1ef-ecce-4f7f-9ce1-74ce925c35df",
@@ -3517,15 +3517,15 @@
                 },
                 {
                     "identifier": "30e6ee35-98ad-4393-975c-1b9b24f64cff",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9969f167-34e0-4f20-b6ee-4353cea5ce86",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "dec72df8-5425-4be1-8e28-36a673008968",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "76a842a5-afcc-44ac-883b-c4296a9ef102",
@@ -3601,7 +3601,7 @@
                 },
                 {
                     "identifier": "c8297aab-c5ec-43e2-87d8-68da18aec8da",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "2477972a-a235-4177-9938-1b506e362e70",
@@ -3673,15 +3673,15 @@
                 },
                 {
                     "identifier": "70de2301-5a85-4b04-8d3d-6c04735d04b5",
-                    "enabled": true
-                },
-                {
-                    "identifier": "c91e51c5-46f9-42fe-ad4f-777d7cbf5eb4",
                     "enabled": false
                 },
                 {
-                    "identifier": "c622d555-081d-4f1e-b09b-80de2f2ee879",
+                    "identifier": "c91e51c5-46f9-42fe-ad4f-777d7cbf5eb4",
                     "enabled": true
+                },
+                {
+                    "identifier": "c622d555-081d-4f1e-b09b-80de2f2ee879",
+                    "enabled": false
                 },
                 {
                     "identifier": "b2ca6e07-f0d9-4a0a-a306-00ec2b994077",
@@ -3917,7 +3917,7 @@
                 },
                 {
                     "identifier": "054e50c1-df05-4117-9da6-59abb9f14d86",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "88634a6a-3616-457f-bd02-e95bba54c1da",
@@ -4001,7 +4001,7 @@
                 },
                 {
                     "identifier": "58d68a77-41ef-4bfa-a264-29daa16c1738",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "30278c09-7ac8-416e-9247-9dc700581aba",
