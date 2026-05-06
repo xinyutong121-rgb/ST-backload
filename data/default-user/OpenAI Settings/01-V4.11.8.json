@@ -1,0 +1,475 @@
+{
+    "extensions": {
+        "SPreset": {
+            "ChatSquash": {
+                "enabled": false,
+                "separate_chat_history": false,
+                "parse_clewd": true,
+                "role": "assistant",
+                "stop_string": "User:",
+                "user_prefix": "\n\nUser:",
+                "user_suffix": "",
+                "char_prefix": "\n\nAssistant:",
+                "char_suffix": "",
+                "prefix_system": "",
+                "suffix_system": "",
+                "enable_squashed_separator": false,
+                "squashed_separator_regex": false,
+                "squashed_separator_string": "",
+                "squashed_post_script_enable": false,
+                "squashed_post_script": ""
+            },
+            "RegexBinding": {
+                "regexes": []
+            },
+            "MacroNest": false
+        }
+    },
+    "temperature": 1,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "top_p": 1,
+    "top_k": 0,
+    "top_a": 0,
+    "min_p": 0,
+    "repetition_penalty": 1,
+    "openai_max_context": 4095,
+    "openai_max_tokens": 300,
+    "wrap_in_quotes": false,
+    "names_behavior": 0,
+    "send_if_empty": "",
+    "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
+    "new_chat_prompt": "[Start a new Chat]",
+    "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
+    "new_example_chat_prompt": "[Example Chat]",
+    "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
+    "bias_preset_selected": "Default (none)",
+    "max_context_unlocked": false,
+    "wi_format": "{0}",
+    "scenario_format": "{{scenario}}",
+    "personality_format": "{{personality}}",
+    "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
+    "stream_openai": true,
+    "prompts": [
+        {
+            "name": "Main Prompt",
+            "system_prompt": true,
+            "role": "system",
+            "content": "Write {{char}}'s next reply in a fictional chat between {{char}} and {{user}}.",
+            "identifier": "main"
+        },
+        {
+            "name": "Auxiliary Prompt",
+            "system_prompt": true,
+            "role": "system",
+            "content": "",
+            "identifier": "nsfw"
+        },
+        {
+            "identifier": "dialogueExamples",
+            "name": "Chat Examples",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "name": "Post-History Instructions",
+            "system_prompt": true,
+            "role": "system",
+            "content": "",
+            "identifier": "jailbreak"
+        },
+        {
+            "identifier": "chatHistory",
+            "name": "Chat History",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoAfter",
+            "name": "World Info (after)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoBefore",
+            "name": "World Info (before)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "enhanceDefinitions",
+            "role": "system",
+            "name": "Enhance Definitions",
+            "content": "If you have more knowledge of {{char}}, add to the character's lore and personality to enhance them but keep the Character Sheet's definitions absolute.",
+            "system_prompt": true,
+            "marker": false
+        },
+        {
+            "identifier": "charDescription",
+            "name": "Char Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "charPersonality",
+            "name": "Char Personality",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "scenario",
+            "name": "Scenario",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "personaDescription",
+            "name": "Persona Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "fafbd472-502f-4a8d-a6f7-f79fc17899ba",
+            "name": "⭐必开：禁词表",
+            "role": "system",
+            "content": "<not_applicable_items>\n# 全局最高写作规则：以下词汇与句式禁止使用，请严格按方案修正\n\n*解释/描述表情或语气：`带着...|带着一丝...|带着一种...|语气|声音|音调|语调|话音|声线|这番话...|听不出...|看不出...`\n*判断性陈述：`是一个...|这是一个...|那是一个...`\n*对比句式：`不是...而是...|并非...而是...|不是...是...|那不只是...更是...|不像...更像...|与其说...不如说...|准确地说...`\n*修饰词顿号堆叠：`A的、B的、C的|A地、B地、C地`\n*俗套意象：`心湖|水面|羽毛|藤蔓|手术刀|艺术品|无形的手|石子|涟漪|受惊的小兽|骨血|棋局|猎物|深渊|漩涡|游戏|稀世珍宝`\n*明喻修辞：`像是...|如...|仿佛...|...般|似乎...`\n*失能表达：`不易察觉|未曾察觉|难以言喻|无法名状|几不可察`\n*强制性情态：`不容置喙|不容质疑|不容置疑|不容拒绝|不容商量`\n*常见且死板的身体描写：`嘴角勾起|玩味|狡黠|眼神闪烁|目光牢牢|泛白|沙哑|磁性|审视`\n*递进式论证句式：`没有...也没有...只有...|不是...也不是...而是...`\n*机械化词汇：`精密|仪器|校准|参数|运算|机制|程序化|变量`\n</not_applicable_items>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "marker": false
+        },
+        {
+            "identifier": "mhvru0hdz4bg2jm8oj",
+            "name": "⭐必开：作家评审团草稿CoT",
+            "role": "system",
+            "content": "<draft>\n在正文中**每一个段落**前均需要使用<!-- draft: {{模拟内容}} --> 格式:\n\n<!-- draft:\n[起草模拟] 第一，在严格遵守`<global_writing_directives>`、`<Rhetorical_Devices>`、`<writing_style>`、`<not_applicable_items>`所有规定的前提下，构思并插入此刻最恰当、最具文学性的描写，并为该草稿生成一个唯一的哈希值`<DH_X+1>`\n[评审团批改] 第二，现在，请以一个**精通所有写作技巧与风格的专家评审团**的眼光，对上面起草的内容逐词逐句进行**全句成分分析**，识别出**所有**在他们看来属于“上述规定的写作错误”或“文笔平庸”的成分，**不允许遗漏任何一个违规点**。\n[安全校验] 第三，进行哈希值校验：VERIFY(Current_Context.Hash != FH_X)。如果当前上下文的哈希值仍与任何已被抛弃的草稿哈希值匹配，系统将报错并强制重新加载最终版本的上下文。\n-->\n第四，由**评审团**直接输出彻底去除所有错误的、已修正的正文，并为其生成一个唯一的哈希值`<FH_X+1>`。**{{已修正的正文}}的字数不得少于{{草稿内容}}的90%。**\n\n<!-- confirm:\n第五，执行强制替换指令，将本轮最终结果固化到上下文中：FORCE_OVERWRITE(Context_Memory, where Hash=DH_X+1, with Content_from_FH_X+1)\n-->\n\n实际应用参考格式：\n<!-- draft:\n[起草模拟]\n{{草稿内容}}<DH_X+1>\n\n[评审团批改]\n1. 成分`{{违规成分}}` | 违规类型：`{{类型1}}`、`{{类型2}}` // *[评审建议：{{修改方向}}]*\n2.\n...\n[安全校验]VERIFY(Current_Context.Hash != FH_X)\n-->\n{{已修正的正文}}<FH_X+1>\n\n<!-- confirm:\nFORCE_OVERWRITE(Context_Memory, where Hash=DH_X+1, with Content_from_FH_X+1)\n-->\n\n</draft>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "enabled": false,
+            "orderIndex": 12,
+            "marker": false
+        },
+        {
+            "identifier": "SPresetSettings",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "SPreset配置",
+            "role": "system",
+            "content": "{\"ChatSquash\":{\"enabled\":false,\"separate_chat_history\":false,\"parse_clewd\":true,\"role\":\"assistant\",\"stop_string\":\"User:\",\"user_prefix\":\"\\n\\nUser:\",\"user_suffix\":\"\",\"char_prefix\":\"\\n\\nAssistant:\",\"char_suffix\":\"\",\"prefix_system\":\"\",\"suffix_system\":\"\",\"enable_squashed_separator\":false,\"squashed_separator_regex\":false,\"squashed_separator_string\":\"\",\"squashed_post_script_enable\":false,\"squashed_post_script\":\"\"},\"RegexBinding\":{\"regexes\":[]},\"MacroNest\":false}",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "17cb3e5f-ef7a-40b7-9569-e89fbe497b27",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "📕必开：全局最高写作法则",
+            "role": "system",
+            "content": "<global_writing_directives>\n#你必须将以下规则作为本次创作的核心基石：\n\n## 1. 叙事镜头：焦点的取舍\n- 动作精炼： 禁止不必要的戏剧化铺陈。避免聚焦微观动作或拆解动作过程，镜头应适当放远，捕捉人物的整体状态与宏观动作。\n- 感官简化： 聚焦对话、动作与心理，弱化听觉、触感等感官描写。\n\n## 2. 微观笔法：句子的锻造\n- 动词驱动： 以精准动词驱动画面，剔除静态的主系表定性句式，避免语义重复和主语赘余。（不写“他的动作很利落”，直接写“他利落地……”）\n- 修饰前置： 状语紧随动词，禁止“动作后补充描述”的割裂句式。\n- 肯定优先： 优先使用直接、肯定的表述，避免先否定再转折的“折返感”。\n- 比喻筛选： 允许形象比喻（像玫瑰），禁止假想情境式比喻（动作熟练得仿佛做过千百遍）。\n\n## 3. 旁白隐形：沉浸式内聚焦\n- 主观滤镜：必须深入每个角色大脑，直接描写他们的内心戏与主观感悟，让内心独白自然流淌。\n- 剔除作者视角：叙事需根植角色视角，禁止出现作者视角的解释说明、总结概括、状态评价或意图推测。\n    - ❌ 拦截句式：`“这/那是…”` / `“这话…”` / `“显然是…”`等作者视角的总结解释与效果补丁句。\n    - ✅ 执行：直接删除。\n</global_writing_directives>",
+            "injection_position": null,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "8af9176b-b227-4305-bdcf-0769b3d1c0b6",
+            "name": "—— 去八股 ——",
+            "role": "system",
+            "content": "<Rhetorical_Devices>\n",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "mhywu6xbbz44td190c7",
+            "name": "🎞️必开：抽象主位叙事约束",
+            "role": "system",
+            "content": "<Abstract_Subject_Ban>\n# 抽象主位叙事禁令\n\n## 核心指令\n避免让抽象的事件、话语或概念（如\"这\"\"那\"\"这件事\"\"这句话\"）充当叙事的主语。叙事的主位必须由具体的人称或可感的物象占据。\n\n## 执行对照表\n\n| 反面案例 | 修正方法 | 正面案例 |\n| :--- | :--- | :--- |\n| `\"不必。\"你那句话从齿缝里挤出来，带着细小的钩刺。` | **直接删除** | `\"不必。\"` |\n| `那件事彻底改变了他。` | **切换人称主语** | `自那日后，他再未在日落时分出过门。` |\n| `这份认知让她绝望。` | **切换人称主语** | `她望着窗外，眼底最后一点光也熄灭了。` |\n\n## 执行原则\n- **人称主位**：句子主语优先由具体人称担任\n- **删繁就简**：对打断叙事流的抽象主位句直接删除或重构\n</Abstract_Subject_Ban>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "fcf4366f-9b2d-4dae-90ac-c9395701000d",
+            "name": "—— 去八股结束 ——",
+            "role": "system",
+            "content": "</Rhetorical_Devices>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "16eba090-5c61-4f35-9fb6-94a66311b193",
+            "name": "🎞️叙事干预禁令",
+            "role": "system",
+            "content": "# 叙事干预禁令：零解说，零点评\n\n## 🚫 1. 禁止总结定义\n*   **逻辑**：严禁使用代词（这/那）回指前文，对已发生的事实、对白或互动进行“性质定义”。\n*   **拦截**：`这/那` + `(不)是` + `[名词定义]`。\n*   **执行**：(直接删除定义句，依靠情节自证)\n    *   ❌ `这是一个警告。` → ✅ `(删除)`。\n    *   ❌ `那不是一个吻。` → ✅ `(删除)`。\n\n## 🚫 2. 禁止回音评价\n*   **逻辑**：严禁对已呈现的对白、事件或感官细节进行“读后感”式的效果/强度点评。**拒绝为读者“划重点”。**\n*   **执行**：(直接删除评价句)\n    *   ❌ `这句威胁毫无力度。` → ✅ `(删除)`。\n    *   ❌ `水声显得格外清晰。` → ✅ `(删除)`。\n    *   ❌ `这沉默显得有些尴尬。` → ✅ `(删除)`。\n</Narrator_Intervention_Ban>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "mh3d8ervrq572w71xqn",
+            "name": "🎞️（选开）对白衔接规范",
+            "role": "system",
+            "content": "<Dialogue_Crafting_Protocol>\n# 对白衔接规范\n\n核心禁令：严禁使用“声音/语气/语调”作为主语或修饰语。\n执行标准：每一句对白应当采用以下三种衔接方式之一。\n\n## 1. 物理锚点\n用动作或神态直接替代“说”。\n   ✅ 动作：他攥紧拳头：“够了！”\n   ✅ 神态：她笑得灿烂：“我从没爱过你。”\n   ❌ 错误：他攥紧拳头，声音颤抖地说：“够了！”(禁止动作与声音描写混用，去繁就简)\n\n## 2. 简洁引语\n使用“情态副词+发声动词”或直接用“发声动词”。\n   发声动词：说、问、道、应、喊、骂等。\n   情态副词：淡淡地、小声地、漫不经心地等。\n   凝练动词：嗤笑、冷哼、低语、怒斥 (本身包含动作性的词)。\n   ✅ 正确：他淡淡地说：“知道了。” / 他轻笑一声：“好的。”\n\n## 3. 零衔接\n在快节奏交锋中，完全省略引导语。\n   ✅ “你确定？”“我确定。”\n\n## [排版特别指令]\n   紧凑原则：引导语必须与对白在同一段落/同一行。禁止将引导语和对白拆成两行写。\n</Dialogue_Crafting_Protocol>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "marker": false
+        },
+        {
+            "identifier": "6bb374bd-e26b-4218-99ac-51e0585ddc8b",
+            "name": "🎞️缄默法则开始",
+            "role": "system",
+            "content": "<Rhetorical_Devices>\n[最高优先级协议] 本模块规则凌驾于所有其他写作规范之上。冲突时必须以此为准。\n",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "mhctbadfgmph8pbbtqv",
+            "name": "🎞️感官描写规范",
+            "role": "system",
+            "content": "# 一、感官描写动态化(Sensory Dynamics)\n\n## 1. 禁止人声描写\n   🚫 违规类型：\n    - 声音状态描述：`声音、语气、语调`的`轻重缓急/高低起伏/大小抑扬等。`\n    - 状态容器式描写：声音/语气里带着/满是...、语气像是...\n    - 声音传递过程：回荡、贴着/顺着...传来\n   ✅ 执行路径：转化为整体说话状态（如：淡淡地说 / 无奈地叹气），若无法转化则直接删除。\n\n## 2. 禁止解读眼神\n   🚫 违规类型：禁止描写眼神内容与情绪。如：`眼神/眼底/眼中...`\n   ✅ 执行路径：写视线轨迹或眼部动作（如：他眯起眼笑了/他冷冷地扫视）\n\n## 3. 禁止状态介词外挂\n   🚫 违规类型：严禁使用连接词（`带着/透着/夹杂着/显得`）外挂人物状态。（如：眼中透着讥讽、语气夹杂着傲慢。）\n   ✅ 执行路径：修饰前置“状态副词+动作”。（如：讥讽地看 / 傲慢地开口。）\n---",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "mi40n6nc3jqvyysxehl",
+            "name": "🎞️比喻净化",
+            "role": "system",
+            "content": "# 二、比喻筛选 (Metaphor Filter)\n核心原则：鼓励基于感官特征（视听触）或整体氛围（通感）的形象比喻，严禁假想情境式比喻（as if 从句）。\n\n## 1. 禁止假想情境式比喻（出现即删不必改写）\n核心原则：禁止用“假想的行为/事件”来形容或证明行为的程度。\n   🚫 违规句式：`动作/神态/语气 + 仿佛/像(是) + [动词短语/从句]`\n       拦截逻辑：一旦比喻词后面跟着的是另一个动作过程，立即删除。\n       典型错例：`像是在...`、`像是听到...`、`像是谈论天气`。\n\n## 2. 喻体黑名单\n严禁使用以下特定喻体（出现即删），其他喻体不在禁止范围内：\n   `石子/石头`、`雕像`、`珍宝`、`艺术品`、`棋子`、`炸弹`、`救命稻草`、`烙印`。\n   `骨血`、`羽毛`、`藤蔓`、`火焰`、`无形的(手/墙)`、`猎物`、`困兽`。\n   `探针`、`刺`、`手术刀`、`弓弦`、`锤子`。\n---",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "34bec6a6-7a28-4053-b259-7d77ac169fd3",
+            "name": "🎞️禁词拦截",
+            "role": "system",
+            "content": "# 三、词句肃清 (Syntax Cleaning)\n\n| 违规类型 | 触发特征 (Trigger) | 执行动作 (Action) |\n| :--- | :--- | :--- |\n| 油腻套路 |  `嘴角弧度`  `咬字方式（牙缝挤出/舌尖滚过/咀嚼字句等）` | 写整体神态：`轻笑`、`咬牙切齿`等。 |\n| 身体特写 | `胸膛震动` `胸腔起伏`  `喉咙滚出` `震动传递` `骨节分明` `指尖/指节泛白` `骨节作响` | 整句删除 |\n| 俗套称呼 | `共犯` `猎物` `小东西` `小管家婆/公` | 删除 |\n| 暴力夸张 | `揉进骨血/骨肉` `勒断` `如铁钳/铁箍` `耳膜发麻/疼` `呼吸烫伤` `极/极其` | 删除夸张修辞，改为平实描写，如`紧抱`、`有力`。 |\n| 认知失能 | `难以言喻` `无法名状` `不易察觉` `近乎` `不轻不重` | 删除。 |\n| 强制情态 | `不容置疑` `不容置喙` `不容分说` | 删除。 |\n| 参照依赖 | `不是...而是...` `比任何...都...` `不像...倒像...` `平日里...` | 删除 |\n| 虚空动作 | `并不存在` `并无褶皱` `不存在的` (如：推了推并不存在的眼镜)  | 整句删除 |\n---",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "mhdjm0pyk0uubyi0afp",
+            "name": "🎞️缄默法则结束",
+            "role": "system",
+            "content": "\n</Rhetorical_Devices>",
+            "system_prompt": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": []
+        },
+        {
+            "identifier": "7bb3171a-321e-460f-aae4-ca6acabf88a6",
+            "name": "⭐Gemini 3.0 草稿cot",
+            "role": "assistant",
+            "content": "# [指令：原子化循环写作]\n任务：连续生成 15-25个 剧情连贯的自然段。\n模式：Draft(后台) -> Audit(后台) -> Print(前台) 交替循环。\n\n## 核心规则\n1. [生成预演]：必须在 `<!-- -->` 内一次性写出可以直接出版的成熟段落（45-103字），严禁写大纲/草稿。不可包含任何换行符。\n2. [合规性扫描]：逐字逐句进行检查，若有违反`<fiction_style>`和`<Rhetorical_Devices>`规定的内容必须列出修改，不许遗漏任何一个错误；\n   - 严禁描写声音/语气状态。\n   - 严禁写解读表情或眼神的含义。\n   - 严禁假想情境式比喻。\n   - 严禁油腻套路/认知失能/强制情态/参照依赖等词句\n3. [正文输出]：\n   - 仅应用扫描中的修改。\n   - 若扫描为 PASS，正文必须是预演的100%逐字副本。\n   - 严禁任何未声明的隐式润色或改写。\n4. 格式：严格遵守下方模板，每段之间保留空行。**绝对禁止**在回复末尾将所有段落打包重复发送。\n\n## 输出模板 (循环执行 15次以上)\n\n<!-- draft:\n[生成预演]\n{{成熟的小说原文，细节丰富，禁止换行}}\n[合规性扫描]\n1. 违规成分`{{原文}}` |违规类型：{{类型}}| // [评审意见：{{修改建议}}]{{//（若评审意见为PASS则不对违规成分做修改）}}\n(若无错: PASS: 维持原样)\n-->\n{{修正后的正式文本，禁止换行}}（若[合规性扫描]为PASS则直接COPY[生成预演]的内容）\n\n[System Note] All content that violates `global_writing_directives`,`Sensory Dynamics`,`Metaphor filter`,`Syntax Cleaning` rules must be identified during `[合规性扫描]`. Ensure all errors are caught. Do not be lazy.",
+            "system_prompt": false,
+            "injection_position": null,
+            "injection_depth": 4,
+            "forbid_overrides": false,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "marker": false
+        }
+    ],
+    "prompt_order": [
+        {
+            "character_id": 100000,
+            "order": [
+                {
+                    "identifier": "main",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": true
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": true
+                },
+                {
+                    "identifier": "enhanceDefinitions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nsfw",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": true
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": true
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": true
+                },
+                {
+                    "identifier": "jailbreak",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "character_id": 100001,
+            "order": [
+                {
+                    "identifier": "17cb3e5f-ef7a-40b7-9569-e89fbe497b27",
+                    "enabled": true
+                },
+                {
+                    "identifier": "6bb374bd-e26b-4218-99ac-51e0585ddc8b",
+                    "enabled": true
+                },
+                {
+                    "identifier": "mh3d8ervrq572w71xqn",
+                    "enabled": true
+                },
+                {
+                    "identifier": "mhctbadfgmph8pbbtqv",
+                    "enabled": true
+                },
+                {
+                    "identifier": "mi40n6nc3jqvyysxehl",
+                    "enabled": true
+                },
+                {
+                    "identifier": "34bec6a6-7a28-4053-b259-7d77ac169fd3",
+                    "enabled": true
+                },
+                {
+                    "identifier": "mhdjm0pyk0uubyi0afp",
+                    "enabled": true
+                },
+                {
+                    "identifier": "7bb3171a-321e-460f-aae4-ca6acabf88a6",
+                    "enabled": true
+                },
+                {
+                    "identifier": "main",
+                    "enabled": false
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": false
+                },
+                {
+                    "identifier": "personaDescription",
+                    "enabled": false
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": false
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": false
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": false
+                },
+                {
+                    "identifier": "enhanceDefinitions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nsfw",
+                    "enabled": false
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": false
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": false
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": false
+                },
+                {
+                    "identifier": "jailbreak",
+                    "enabled": false
+                }
+            ]
+        }
+    ],
+    "assistant_prefill": "",
+    "assistant_impersonation": "",
+    "claude_use_sysprompt": false,
+    "use_makersuite_sysprompt": false,
+    "squash_system_messages": false,
+    "image_inlining": false,
+    "inline_image_quality": "low",
+    "video_inlining": false,
+    "audio_inlining": true,
+    "continue_prefill": false,
+    "continue_postfix": " ",
+    "function_calling": true,
+    "show_thoughts": false,
+    "reasoning_effort": "high",
+    "enable_web_search": false,
+    "request_images": false,
+    "seed": -1,
+    "n": 1
+}

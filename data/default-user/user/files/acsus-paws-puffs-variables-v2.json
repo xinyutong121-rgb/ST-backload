@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "suites": {},
+  "variables": {},
+  "settings": {
+    "enabled": false,
+    "activeSuiteId": null,
+    "apiConfig": {
+      "source": "default",
+      "baseUrl": "",
+      "apiKey": "",
+      "model": "",
+      "format": "openai",
+      "params": {}
+    },
+    "messageCounts": {}
+  }
+}

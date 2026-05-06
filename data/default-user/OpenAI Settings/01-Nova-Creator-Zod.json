@@ -762,42 +762,7 @@
             ],
             "variables": {}
         },
-        "regex_scripts": [
-            {
-                "id": "42e3ba54-370c-45b8-8fe7-fd4ac5dc764a",
-                "scriptName": "去除更新变量",
-                "findRegex": "/<(UpdateVariable|Analysis|JSONPatch)>[\\s\\S]*?</\\1>/gm",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "1d6e8375-6c0c-4250-8f31-1baaf0cae338",
-                "scriptName": "对AI隐藏状态栏",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "<StatusPlaceHolderImpl/>",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null,
-                "markdownOnly": false,
-                "promptOnly": true
-            }
-        ],
+        "regex_scripts": [],
         "SPreset": {
             "ChatSquash": {
                 "enabled": false,

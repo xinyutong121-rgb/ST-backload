@@ -1,5 +1,14 @@
 {
-    "chat_completion_source": "makersuite",
+    "chat_completion_source": "custom",
+    "temperature": 0.7,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "top_p": 1,
+    "top_k": 0,
+    "top_a": 0,
+    "min_p": 0,
+    "repetition_penalty": 1,
+    "max_context_unlocked": true,
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "openrouter_model": "OR_Website",
@@ -14,43 +23,32 @@
     "cohere_model": "command-r",
     "perplexity_model": "llama-3-70b-instruct",
     "groq_model": "llama3-70b-8192",
+    "chutes_model": "deepseek-ai/DeepSeek-V3-0324",
+    "chutes_sort_models": "alphabetically",
     "siliconflow_model": "deepseek-ai/DeepSeek-V3",
-    "xai_model": "grok-3-beta",
-    "pollinations_model": "openai",
-    "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "electronhub_model": "gpt-4o-mini",
     "electronhub_sort_models": "alphabetically",
     "electronhub_group_models": false,
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
     "moonshot_model": "kimi-latest",
     "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
     "cometapi_model": "gpt-4o",
-    "zai_model": "glm-4.6",
-    "zai_endpoint": "common",
-    "custom_model": "claude-opus-4-5-20251101",
-    "custom_url": "https://api.dzzi.ai/v1",
+    "custom_model": "gemini-2.5-pro[真流-GG公益]",
+    "custom_url": "https://gemini.beijixingxing.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
-    "custom_prompt_post_processing": "strict",
-    "google_model": "gemini-3-pro-preview-low",
+    "custom_prompt_post_processing": "strict_tools",
+    "google_model": "gemini-2.5-pro-maxthinking",
     "vertexai_model": "gemini-2.0-flash-001",
-    "nanogpt_model": "gpt-4o-mini",
-    "deepseek_model": "deepseek-chat",
-    "azure_base_url": "",
-    "azure_deployment_name": "",
-    "azure_api_version": "2024-02-15-preview",
-    "azure_openai_model": "",
-    "temperature": 0.7,
-    "frequency_penalty": 0,
-    "presence_penalty": 0,
-    "top_p": 1,
-    "top_k": 0,
-    "top_a": 0,
-    "min_p": 0,
-    "repetition_penalty": 1,
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
     "openai_max_context": 300439,
     "openai_max_tokens": 30000,
-    "wrap_in_quotes": false,
     "names_behavior": 0,
     "send_if_empty": "",
     "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
@@ -60,8 +58,6 @@
     "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://gcli.ggchan.dev/v1",
-    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
-    "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
@@ -3422,7 +3418,7 @@
                 },
                 {
                     "identifier": "31b2c6b9-617b-43ee-8bb6-af357ea5e4f9",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "d70683ad-f8a5-481e-b6b5-2500438727e3",
@@ -3430,7 +3426,7 @@
                 },
                 {
                     "identifier": "259edeb1-9e3d-4148-a690-53ad60a34c1f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "27005712-ae6a-444d-b2bb-ca61f86b221b",
@@ -3534,11 +3530,11 @@
                 },
                 {
                     "identifier": "7af5b511-8c91-4c87-93a3-5720484c4ccb",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "5c21a423-635f-4cb0-979a-6e140fc47eb5",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "abc81dae-b7a5-4303-acc0-f411cb851994",
@@ -3570,11 +3566,11 @@
                 },
                 {
                     "identifier": "5c7ced17-6471-4ce6-bb44-4b8afb5bb9c3",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "8249e707-840f-489d-acb3-0b3a84eac4d1",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "a6d9caa3-f156-46a5-af0c-4683d51407b3",
@@ -3646,11 +3642,11 @@
                 },
                 {
                     "identifier": "2aa3fff3-6b87-42d5-8b6b-de7430480a34",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "a87503ce-bd5b-4bdd-abfc-097c3139fb7c",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "0cdec172-dbd2-4fb9-9035-754d1d500ba2",
@@ -3882,7 +3878,7 @@
                 },
                 {
                     "identifier": "29b8b64a-acd6-4110-af49-2a8e91cb289e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "73ac3364-52ed-4138-ab1f-8c2d7211d251",
@@ -3906,7 +3902,7 @@
                 },
                 {
                     "identifier": "8810f84a-e9b7-4e57-8ed8-20ace4b9632b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "76e56142-3e8d-4722-bab0-710b82f40a11",
@@ -3922,7 +3918,7 @@
                 },
                 {
                     "identifier": "2eb60ccc-fd04-4d16-9dcf-76e56071ff0d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "0182b5dd-51a2-4369-9b2e-970b99df7e13",
@@ -3934,7 +3930,7 @@
                 },
                 {
                     "identifier": "745e9163-6ac8-4a65-8b9f-ad941e794374",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "7e2a6e5a-68cb-418a-b704-fe69a7ddfcf7",
@@ -3958,7 +3954,7 @@
                 },
                 {
                     "identifier": "e942ea05-28d2-44cd-85e2-59b8d3755e58",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "f1fcbf0e-d4af-410e-b1f0-77089f89477e",
@@ -4038,7 +4034,7 @@
                 },
                 {
                     "identifier": "95b3f527-67a4-4cf2-bb27-486a8db8142a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "ff68627a-39b0-4a90-b87b-d6d2eefc0f9f",
@@ -4102,11 +4098,11 @@
                 },
                 {
                     "identifier": "5e3139b4-2188-47ec-be95-e48df520872d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "73267f9f-a5fa-406c-bcfa-4c42b02570f2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "478a42d0-69e0-4511-97bf-2eedbae3d63e",
@@ -4134,7 +4130,7 @@
                 },
                 {
                     "identifier": "fbb0d0d3-1537-4390-9a2d-75c8eae7c3f2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "7b8df434-be68-41c8-a4f3-16ce7744be91",
@@ -4250,7 +4246,7 @@
                 },
                 {
                     "identifier": "50be1361-d8f7-4e3b-98a3-344f633783ae",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "5678c0d1-95e6-4a5d-be52-fecfff06ce60",
@@ -4262,7 +4258,7 @@
                 },
                 {
                     "identifier": "7b1b3493-5c36-4390-9e31-b378e43b9589",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "enhanceDefinitions",
@@ -4298,7 +4294,7 @@
                 },
                 {
                     "identifier": "049baf94-c671-473a-8306-e56e6df244c5",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9797ce75-1634-4a79-8bb0-5f31a36a0278",
@@ -4320,28 +4316,33 @@
         }
     ],
     "show_external_models": true,
+    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
     "assistant_prefill": "",
     "assistant_impersonation": "",
-    "claude_use_sysprompt": false,
-    "use_makersuite_sysprompt": false,
+    "use_sysprompt": false,
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
     "squash_system_messages": false,
-    "image_inlining": false,
+    "media_inlining": true,
     "inline_image_quality": "auto",
-    "video_inlining": false,
-    "audio_inlining": true,
-    "bypass_status_check": true,
     "continue_prefill": true,
     "continue_postfix": " ",
     "function_calling": false,
     "show_thoughts": true,
     "reasoning_effort": "auto",
+    "verbosity": "auto",
     "enable_web_search": false,
-    "request_images": false,
     "seed": -1,
     "n": 1,
+    "bypass_status_check": true,
+    "request_images": false,
+    "request_image_aspect_ratio": "",
+    "request_image_resolution": "",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "extensions": {
         "SPreset": {
             "ChatSquash": {

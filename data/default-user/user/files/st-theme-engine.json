@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "settings": {
+    "activeSchemeId": "default"
+  },
+  "schemes": {
+    "default": {
+      "id": "default",
+      "name": "默认",
+      "cssContent": "",
+      "htmlInjections": [],
+      "jsContent": "",
+      "jsAutoRun": false,
+      "createdAt": 1777298163670,
+      "updatedAt": 1777298163670
+    }
+  }
+}

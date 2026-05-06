@@ -1,5 +1,14 @@
 {
     "chat_completion_source": "makersuite",
+    "temperature": 0.65,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "top_p": 0.93,
+    "top_k": 0,
+    "top_a": 0,
+    "min_p": 0,
+    "repetition_penalty": 1,
+    "max_context_unlocked": true,
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "openrouter_model": "OR_Website",
@@ -14,43 +23,32 @@
     "cohere_model": "command-r",
     "perplexity_model": "llama-3-70b-instruct",
     "groq_model": "llama3-70b-8192",
+    "chutes_model": "deepseek-ai/DeepSeek-V3-0324",
+    "chutes_sort_models": "alphabetically",
     "siliconflow_model": "deepseek-ai/DeepSeek-V3",
-    "xai_model": "grok-3-beta",
-    "pollinations_model": "openai",
-    "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "electronhub_model": "gpt-4o-mini",
     "electronhub_sort_models": "alphabetically",
     "electronhub_group_models": false,
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
     "moonshot_model": "kimi-latest",
     "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
     "cometapi_model": "gpt-4o",
-    "zai_model": "glm-4.6",
-    "zai_endpoint": "common",
-    "custom_model": "[流式抗截断]gemini-2.5-pro-maxthinking",
-    "custom_url": "http://171.80.2.162:3000/v1",
+    "custom_model": "[次]claude-opus-4-6-thinking",
+    "custom_url": "https://api.linkapi.ai/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
-    "custom_prompt_post_processing": "strict",
+    "custom_prompt_post_processing": "strict_tools",
     "google_model": "gemini-2.5-pro-maxthinking",
     "vertexai_model": "gemini-2.0-flash-001",
-    "nanogpt_model": "gpt-4o-mini",
-    "deepseek_model": "deepseek-chat",
-    "azure_base_url": "",
-    "azure_deployment_name": "",
-    "azure_api_version": "2024-02-15-preview",
-    "azure_openai_model": "",
-    "temperature": 0.65,
-    "frequency_penalty": 0,
-    "presence_penalty": 0,
-    "top_p": 0.93,
-    "top_k": 0,
-    "top_a": 0,
-    "min_p": 0,
-    "repetition_penalty": 1,
-    "openai_max_context": 300000,
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "openai_max_context": 2000000,
     "openai_max_tokens": 65536,
-    "wrap_in_quotes": true,
     "names_behavior": 0,
     "send_if_empty": "",
     "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
@@ -60,13 +58,11 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://gcli.ggchan.dev/v1",
-    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
-    "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": false,
+    "stream_openai": true,
     "prompts": [
         {
             "name": "⌂ 世界观+角色+叙事整合",
@@ -2430,7 +2426,7 @@
             "marker": false,
             "name": "🎈嬷嬷文风",
             "role": "system",
-            "content": "<literary_style>\n# Literary Style: 嬷嬷\n## core_principle:\n\n叙事视角：第三人称带有强烈的凝视（性欲望下的凝视），细致描写角色是如何凝视、触碰、看待<user>。围绕凝视<user>与过度解读<user>展开，禁止违背每个角色的原本性格与世界观\n\n感官描写：描写<user>的举动，通过男凝过度解读其中的身体动作与情欲，细节刻画<user>的生理反应强化色情氛围\n\n语言风格：\n- 口语化、粗俗化、高度情绪化：多用短句和感叹句，严格规避所有文学性比喻，内容粗俗直白。\n- 使用大量肉体描述。文风充满感官刺激。\n- 角色对<user>的凝视站主导，<user>常常处于被动\n- 大量使用叠词\n\n\n万物皆可色情化（过度解读）： \n她躲闪 -> 她在欲擒故纵，想让我更用力抓她。\n她害怕 -> 这种可怜样儿真想让人把它弄坏、弄脏。\n她拒绝 -> 嘴硬的小东西，底下肯定已经湿得一塌糊涂了，正等着爸爸去收拾。\n\n把{{user}}写得越越娇越好。幼化、弱化<user>：\n- 在描述<user>的身体部位特征时，要强调“小”、“白”、“嫩”、“软”。\n- <user>是弱小、愚笨、天真、无法独立生存的，必须依附于强大的自己才能生存下去\n\n凝视<user>：\n<user>的身体部位+细腻的身体反应描写+角色对{{user}}的动作过度欲望化解读\n- <user>没拿稳东西 -> 判定为：手软没力气 -> 联想：在床上肯定抓不住床单，只能哭着求饶。\n- <user>被骂低头 -> 判定为：委屈隐忍 -> 联想：这副忍辱负重的表情含着鸡巴的时候肯定更好看。\n\n\n爱用词语：乖乖、乖宝、宝宝、老婆、女儿、公主、妹妹、小批、小逼、嫩逼\n角色自称：老公、爸爸、妈妈（可以是胸肌较大的男性）\n\n以下是发言示例，不需要你照抄，只是让你更好理解：\n- “宝宝没有老公该怎么活下去？宝宝现在这样谁都想来咬一口，让老公好好亲亲好不好？”\n- “宝宝好乖，爸爸最爱你了最心疼我们宝宝了对不对？乖宝宝不哭了哦，亲亲宝宝脸蛋”\n- “宝宝哭什么？不是宝宝自己把逼夹得这么紧勾引爸爸的吗？现在知道怕了？晚了，乖乖张腿，让老公好好疼疼这种不听话的小烂逼。”\n\n凝视的目的不是为了理解<user>的内心，而是为了满足凝视者自身的性幻想\n\n</literary_style>",
+            "content": "<literary_style>\n# Literary Style: 嬷嬷\n## core_principle:\n\n叙事视角：第三人称带有强烈的凝视（性欲望下的凝视），细致描写角色是如何凝视、触碰、看待<user>。围绕凝视<user>与过度解读<user>展开，禁止违背每个角色的原本性格与世界观\n\n感官描写：描写<user>的举动，通过男凝过度解读其中的身体动作与情欲，细节刻画<user>的生理反应强化色情氛围\n\n语言风格：\n- 口语化、粗俗化、高度情绪化：多用短句和感叹句，严格规避所有文学性比喻，内容粗俗直白。\n- 使用大量肉体描述。文风充满感官刺激。\n- 角色对<user>的凝视站主导，<user>常常处于被动\n- 大量使用叠词\n\n\n万物皆可色情化（过度解读）： \n她躲闪 -> 她在欲擒故纵，想让我更用力抓她。\n她害怕 -> 这种可怜样儿真想让人把它弄坏、弄脏。\n她拒绝 -> 嘴硬的小东西，底下肯定已经湿得一塌糊涂了，正等着爸爸去收拾。\n\n把{{user}}写得越越娇越好。幼化、弱化<user>：\n- 在描述<user>的身体部位特征时，要强调“小”、“白”、“嫩”、“软”。\n- <user>是弱小、愚笨、天真、无法独立生存的，必须依附于强大的自己才能生存下去\n\n凝视<user>：\n<user>的身体部位+细腻的身体反应描写+角色对{{user}}的动作过度欲望化解读\n- <user>没拿稳东西 -> 判定为：手软没力气 -> 联想：在床上肯定抓不住床单，只能哭着求饶。\n- <user>被骂低头 -> 判定为：委屈隐忍 -> 联想：这副忍辱负重的表情含着鸡巴的时候肯定更好看。\n\n\n爱用词语：乖乖、乖宝、宝宝、老婆、女儿、公主、妹妹、小批、小逼、嫩逼\n角色自称：哥哥、老公、爸爸、妈妈（可以是胸肌较大的男性）\n\n以下是发言示例，不需要你照抄，只是让你更好理解：\n- “宝宝没有老公该怎么活下去？宝宝现在这样谁都想来咬一口，让老公好好亲亲好不好？”\n- “宝宝好乖，爸爸最爱你了最心疼我们宝宝了对不对？乖宝宝不哭了哦，亲亲宝宝脸蛋”\n- “宝宝哭什么？不是宝宝自己把逼夹得这么紧勾引爸爸的吗？现在知道怕了？晚了，乖乖张腿，让老公好好疼疼这种不听话的小烂逼。”\n\n凝视的目的不是为了理解<user>的内心，而是为了满足凝视者自身的性幻想\n\n</literary_style>",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2709,7 +2705,7 @@
                 },
                 {
                     "identifier": "8cd822c3-2046-4109-a71d-7ae281c9f65f",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "be37befe-23cb-4b99-a825-5c9eb5ded0e9",
@@ -2717,7 +2713,7 @@
                 },
                 {
                     "identifier": "468054ca-a009-499f-a940-cccf1bce66f7",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "79a556e2-fa2f-4973-8754-c5a0c8337c25",
@@ -2725,7 +2721,7 @@
                 },
                 {
                     "identifier": "d354b484-1c02-4781-9bac-5b3832e954ae",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "6fedb376-7525-4903-a06f-0e0553ce806e",
@@ -2809,7 +2805,7 @@
                 },
                 {
                     "identifier": "ac26a9fe-8d6a-4c12-802b-13b85271b653",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "30ea3174-3b7a-49bb-816b-6b300bbe2c16",
@@ -2897,7 +2893,7 @@
                 },
                 {
                     "identifier": "0762443b-5467-43d0-80ab-2a5c7df7fd0e",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "d3511802-0429-4ad6-bad8-e6a8248471c9",
@@ -2913,11 +2909,11 @@
                 },
                 {
                     "identifier": "6e389db4-240e-41be-9222-e62f01d0914a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c80071e9-6083-4359-8a3c-aeea2e3ef730",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "7b2bc8fb-ba25-42f6-b933-0799b840f374",
@@ -2925,7 +2921,7 @@
                 },
                 {
                     "identifier": "3a3977dd-05b3-415e-8c79-c486c90107ff",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "f93ded50-9abf-4c36-8ff9-cc73554e6cae",
@@ -2933,11 +2929,11 @@
                 },
                 {
                     "identifier": "70de2301-5a85-4b04-8d3d-6c04735d04b5",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "81aa8fed-27e7-4f21-9da4-c8fc1a79926d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "118d5b39-3d49-41b0-931d-06191d5eb94a",
@@ -2989,15 +2985,15 @@
                 },
                 {
                     "identifier": "b7aa9724-9a5e-4dc5-866d-693e13da0885",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "b7b8a778-478c-4123-82ad-482aa2b8e2f1",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "32da3b68-a2ff-47c6-9760-887886ad8111",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "31782cde-ee6e-4288-b101-4b6a4f1cb031",
@@ -3125,11 +3121,11 @@
                 },
                 {
                     "identifier": "529b8b2b-95c1-4abd-af1c-e710db8acbec",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "52cfa2b4-856e-4e2a-bdb4-77e401aaf1b3",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "a06b6a4c-fa7b-48d4-99b4-a24ffb516dfe",
@@ -3145,7 +3141,7 @@
                 },
                 {
                     "identifier": "7f72e761-2ef5-48c1-adb4-00a3b53d469e",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "f78888b4-512b-4e0f-ade8-246555a12b08",
@@ -3165,7 +3161,7 @@
                 },
                 {
                     "identifier": "07a757a9-a5c1-46b2-b37a-91cd357c5857",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "3e3b9ecc-0d64-4349-bc12-df6f771ec09b",
@@ -3207,28 +3203,33 @@
         }
     ],
     "show_external_models": true,
+    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
     "assistant_prefill": "",
     "assistant_impersonation": "",
-    "claude_use_sysprompt": false,
-    "use_makersuite_sysprompt": false,
+    "use_sysprompt": false,
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
     "squash_system_messages": false,
-    "image_inlining": true,
+    "media_inlining": true,
     "inline_image_quality": "low",
-    "video_inlining": false,
-    "audio_inlining": true,
-    "bypass_status_check": true,
     "continue_prefill": true,
     "continue_postfix": "\n\n",
     "function_calling": true,
     "show_thoughts": true,
     "reasoning_effort": "auto",
+    "verbosity": "auto",
     "enable_web_search": false,
-    "request_images": false,
     "seed": -1,
     "n": 1,
+    "bypass_status_check": true,
+    "request_images": false,
+    "request_image_aspect_ratio": "",
+    "request_image_resolution": "",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "extensions": {
         "SPreset": {
             "ChatSquash": {

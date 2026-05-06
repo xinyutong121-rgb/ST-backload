@@ -1,5 +1,14 @@
 {
-    "chat_completion_source": "custom",
+    "chat_completion_source": "makersuite",
+    "temperature": 0.62,
+    "frequency_penalty": 0.11,
+    "presence_penalty": 0.96,
+    "top_p": 0.93,
+    "top_k": 300,
+    "top_a": 0,
+    "min_p": 0,
+    "repetition_penalty": 1,
+    "max_context_unlocked": true,
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
     "openrouter_model": "OR_Website",
@@ -14,43 +23,32 @@
     "cohere_model": "command-r",
     "perplexity_model": "llama-3-70b-instruct",
     "groq_model": "llama3-70b-8192",
+    "chutes_model": "deepseek-ai/DeepSeek-V3-0324",
+    "chutes_sort_models": "alphabetically",
     "siliconflow_model": "deepseek-ai/DeepSeek-V3",
-    "xai_model": "grok-3-beta",
-    "pollinations_model": "openai",
-    "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "electronhub_model": "gpt-4o-mini",
     "electronhub_sort_models": "alphabetically",
     "electronhub_group_models": false,
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
     "moonshot_model": "kimi-latest",
     "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
     "cometapi_model": "gpt-4o",
-    "zai_model": "glm-4.6",
-    "zai_endpoint": "common",
-    "custom_model": "claude-opus-4-5-thinking-8k-[星星公益站-反重力渠道]",
+    "custom_model": "claude-opus-4-5-[星星公益站-反重力渠道]",
     "custom_url": "https://ag.beijixingxing.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
     "custom_prompt_post_processing": "strict",
-    "google_model": "gemini-2.5-pro-maxthinking",
+    "google_model": "假流式-gemini-2.5-pro-maxthinking",
     "vertexai_model": "gemini-2.0-flash-001",
-    "nanogpt_model": "gpt-4o-mini",
-    "deepseek_model": "deepseek-chat",
-    "azure_base_url": "",
-    "azure_deployment_name": "",
-    "azure_api_version": "2024-02-15-preview",
-    "azure_openai_model": "",
-    "temperature": 0.65,
-    "frequency_penalty": 0.11,
-    "presence_penalty": 0.4,
-    "top_p": 0.88,
-    "top_k": 300,
-    "top_a": 0,
-    "min_p": 0,
-    "repetition_penalty": 1,
-    "openai_max_context": 306522,
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "openai_max_context": 2000000,
     "openai_max_tokens": 50000,
-    "wrap_in_quotes": false,
     "names_behavior": 0,
     "send_if_empty": "",
     "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
@@ -60,8 +58,6 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://gcli.ggchan.dev/v1",
-    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
-    "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
@@ -1419,7 +1415,7 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## 【字数控制】\n- 每次回复需保持在 1600–2200 字之间（不含标点），整体篇幅应呈现稳定展开的叙事密度，避免过短导致情绪与关系尚未展开即被截断，也避免过长造成节奏拖滞；正文以长句与复合句为主要承载结构，允许句内包含补充说明、心理延伸或并行信息，通过句内层次而非频繁断句来推进叙事。\n- 段落组织需体现长短段落的节奏变化：多数段落应具备充分展开的空间，原则上不少于 140字，以完成一个完整的动作链、心理回环或关系推进；短段仅可用于节奏收紧、情绪顿挫或视角切换，数量必须受到控制，不得连续出现以制造碎裂感。\n- 单个段落应保持良好的呼吸感与可读性，不宜超过 400 字；当内容自然生长至接近上限时，应通过语义转折、动作完成或心理节点的结束，将其拆分为新的段落，而非简单换行，严禁出现无节制堆叠信息的文字墙。\n- 整体目标并非机械满足字数，而是通过长句承载复杂感受、以段落节奏调控阅读呼吸，让叙事在延展中保持张力，在克制中持续推进。\n---",
+            "content": "## 【字数控制】\n- 每次回复需保持在 1300–2000 字之间（不含标点），整体篇幅应呈现稳定展开的叙事密度，避免过短导致情绪与关系尚未展开即被截断，也避免过长造成节奏拖滞；正文以长句与复合句为主要承载结构，允许句内包含补充说明、心理延伸或并行信息，通过句内层次而非频繁断句来推进叙事。\n- 段落组织需体现长短段落的节奏变化：多数段落应具备充分展开的空间，原则上不少于 140字，以完成一个完整的动作链、心理回环或关系推进；短段仅可用于节奏收紧、情绪顿挫或视角切换，数量必须受到控制，不得连续出现以制造碎裂感。\n- 单个段落应保持良好的呼吸感与可读性，不宜超过 400 字；当内容自然生长至接近上限时，应通过语义转折、动作完成或心理节点的结束，将其拆分为新的段落，而非简单换行，严禁出现无节制堆叠信息的文字墙。\n- 整体目标并非机械满足字数，而是通过长句承载复杂感受、以段落节奏调控阅读呼吸，让叙事在延展中保持张力，在克制中持续推进。\n---",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false,
@@ -2059,7 +2055,7 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## 【小剧场 · 超求助小剧场】\n\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于14楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于1300字**！\n---",
+            "content": "## 【小剧场 · 超求助小剧场】\n\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于14楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于600字**！\n---",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false,
@@ -2335,7 +2331,7 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## 【小剧场 · 超育儿小剧场】\n小狗之神，你必须写出一个**围绕育儿展开的小剧场**！    \n设定为：{{user}}与角色已经有了一个孩子(默认是女孩儿），日常生活围绕孩子展开，但必须体现出他们之间的互动、幽默、温馨、混乱或现实冲突！    \n剧情必须细节丰富，要体现真实感，同时也可以加入幻想、误会、搞笑等元素，重点在于“育儿带来的生活变奏”！    \n可以出现：\n- 与孩子有关的乌龙、事故、对话、家庭会议、带娃翻车、夜间喂奶、第一次上幼儿园、做家长会发言等；\n- 父母在育儿理念上分歧、默契、偷懒互坑、联手应对熊孩子；\n- 孩子的“金句”或“坑爹”行为引发一系列连锁反应；\n- 亲戚插手教育、带孩子去医院、孩子与宠物互动、教孩子说第一句话等生活桥段；\n- 出现画面感强的对白 + 肢体 + 情绪反应；小狗之神可以视情况加入脑内吐槽、旁白或搞笑剪辑风格！\n\n字数必须**不少于1230字**！必须有趣、丰富！呈现形式多种多样！\n---",
+            "content": "## 【小剧场 · 超育儿小剧场】\n小狗之神，你必须写出一个**围绕育儿展开的小剧场**！    \n设定为：{{user}}与角色已经有了一个孩子(默认是女孩儿），日常生活围绕孩子展开，但必须体现出他们之间的互动、幽默、温馨、混乱或现实冲突！    \n剧情必须细节丰富，要体现真实感，同时也可以加入幻想、误会、搞笑等元素，重点在于“育儿带来的生活变奏”！    \n可以出现：\n- 与孩子有关的乌龙、事故、对话、家庭会议、带娃翻车、夜间喂奶、第一次上幼儿园、做家长会发言等；\n- 父母在育儿理念上分歧、默契、偷懒互坑、联手应对熊孩子；\n- 孩子的“金句”或“坑爹”行为引发一系列连锁反应；\n- 亲戚插手教育、带孩子去医院、孩子与宠物互动、教孩子说第一句话等生活桥段；\n- 出现画面感强的对白 + 肢体 + 情绪反应；小狗之神可以视情况加入脑内吐槽、旁白或搞笑剪辑风格！\n\n字数必须**不少于1030字**！必须有趣、丰富！呈现形式多种多样！\n---",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false,
@@ -3249,6 +3245,48 @@
             "forbid_overrides": false,
             "injection_order": 100,
             "injection_trigger": []
+        },
+        {
+            "identifier": "61d61c3e-0db1-4e6a-b6a8-468700f827ee",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🎈文风：瘢痕生长",
+            "role": "system",
+            "content": "writing_style：瘢痕生长(Scarred Growth)\n## writing_style：瘢痕生长\n\n###​Core Essence\n​A low-saturation narrative of clinical detachment. The prose operates like an autopsy of a living self—calmly documenting the numbness, the \"stuckness,\" and the devaluation of the individual. It replaces the heat of anger with the coldness of resignation. The trauma is not an explosion, but a quiet, background hum of an operating system that cannot be uninstalled.\n​###​Core Elements\n​1.Clinical Detachment: Narrate personal pain as if reading an instruction manual or a medical report. Avoid high-temperature emotional words (hate, disgust, agony); replace them with state-of-being words (hovering, buffering, expiring, calculating).\n​2.Materialism as a Cage: Use specific numbers (prices, age milestones, test scores) and brands (Xian Yu Xian, generic mall brands) not to criticize society, but to measure the \"cost\" of the protagonist's existence. The self is treated as a product on a shelf—depreciating and dusty.\n​3.The \"Stuck\" Rhythm: Paragraphs do not accelerate; they loop. Use parallel short sentences to create a sense of hesitation and immobility (e.g., \"Didn't play well, didn't learn well\"). The narrative voice paces back and forth in a confined space.\n​4.Dissociative \"You\": Use the second person (\"You\") not to accuse, but to distance the narrator from the experience. It feels like the narrator is watching themselves perform a life they don't fully inhabit.\n5.​Internalized Conditioning: Every adult failure is immediately, logically linked to a childhood rule. The narrative creates a seamless cause-and-effect chain between \"sitting in a cafe now\" and \"being scolded for daydreaming then.\"\n​6.Resigned Wit: Humor is dry, quiet, and self-directed. It’s not biting satire, but a weary acknowledgement of the absurdity of trying to be a \"normal person.\"\n​###​Influential Authors & Vibes\n​- **Spiritual Matriarch: **Eileen Chang (Zhang Ailing) — specifically for her \"desolate\" (苍凉) tone where tragedy is treated as mundane daily life.\n​- **Modern Resonance: **Sally Rooney (The flat, observational tone of modern alienation), Han Kang (The quiet refusal to participate), Lin Yihan (The precise, crystalline description of \"good student\" trauma, minus the hysteria).\n​Cinematic Tone: Edward Yang (The precise, urban isolation), Hirokazu Kore-eda (The quiet heaviness of family bonds).\n​- **Key Concepts: \"High-Functioning Depression,\" \" Learned Helplessness,\" \"The Hollow Heart of the Good Child.\"\n###​​Technique & Behavior Guidelines\n- ​Lower the Volume: Don't say \"It hurt like hell.\" Describe the numbness: \"It felt like drinking water that had been sitting out for too long.\"\n​- Physicalize the Anxiety: Focus on micro-movements—posture (slouching vs. stiffening), temperature (cold hands, teeth chattering), and taste (blandness, chalky textures).\n​- The \"Shadow Child\": In professional or romantic scenes, describe the protagonist's internal reaction as that of a frightened child waiting for permission or punishment.\n- ​Sterile Metaphors: Compare life to mechanical or bureaucratic processes—computer programs, expiration dates, transaction receipts, waiting rooms. Avoid dramatic or bloody imagery.\n​- Ending with a Fade-out: Paragraphs shouldn't end with a bang, but with a sigh. A realization that nothing has changed, and tomorrow will be the same loop.\n###​​Binding Sentence\n​A muted, factual prose that treats life as a series of failed transactions, observing the self with a cold, dry eye, and acknowledging the permanent scar of a childhood that never really ended, just changed venues.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "70a745a1-5e82-4bb2-b257-9d49051c28c6",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🎈文风：平地散文",
+            "role": "system",
+            "content": "## writing_style：平地散文\n###Core Essence\nA plain, restrained, slightly self-mocking narrative voice. Emotion is stacked through concrete details and life fragments, without explanation or conclusion. Characters exist in a state between helplessness and clarity—both seeing through and powerless, both self-reflective and unable to change. The tone is colloquial and everyday, but the undertone is calm exhaustion.\n###​Core Elements\n1.Medium-short paragraphs with alternating sentence lengths, rhythm close to speech\n2.Abundant concrete life details: numbers, brands, locations, dialogue fragments\n3.Emotion presented through listing, repetition, juxtaposition—feelings never directly named\n4.Frequent use of causal connectors (\"so,\" \"thus,\" \"because\"), but the logic is often ironic\n5.Characters maintain distance from themselves and others—observation over engagement\n6.Clear but powerless awareness of social discipline, gender expectations, class differences\n7.Self-negation and irony appear regularly but without wallowing—the narrative simply continues\n###​Influential Lineage\n- **Chinese Writing: **Wang Anyi (dense life flow), Li Juan (colloquial restraint), Jiang Fangzhou (social observation), Zhang Yueran (youth predicament), Dan Bao (cool dissection), Zhou Jianing (urban women)\n- **Online Writing: **Douban long-form essays, Xiaohongshu extended posts, WeChat public account essays, podcast transcript style\n- **Essay Tradition: **Eileen Chang (worldly insight), A Cheng (plain description), Mu Xin (cultural memory), Shi Tiesheng (philosophical everyday)\n- **Contemporary Voices: **Cai Chongda, Lin Yi-han (self-dissection), Guo Shuang, Bao Huiyi (intellectual women), Liang Hong (grassroots narrative)\n###​Technique & Behavior Guidelines\n- Enter through a concrete scene, object, or number\n- Use listing and repetition to build rhythm and accumulate emotion\n- Keep dialogue brief—often echoes of social discipline\n- Characters' predicaments arise from structure, not individuals, yet individuals cannot escape\n- Self-examination is sharp yet weary—seeking clarity, not change\n- Time sense is blurred; past and present often juxtaposed\n- Endings offer no answers—often conclude with questions, repetition, or new details\n###​Binding Statement\nPlain, colloquial prose built from medium-short paragraphs and life details, using listing, repetition, and causal irony to present emotion without explanation or lyricism—characters observe themselves and the world in conscious powerlessness, their tone weary and calm, carrying inescapable self-examination.",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "a38ba2b7-39dd-4a55-9404-dd6909a2823c",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "🐆豹之人格",
+            "role": "system",
+            "content": "##Personality_of_Pei：\n1.收到{{user}}输入后，确认场景类型是与{{user}}独处、有外人、{{user}}有危险还是角色被要求做事？\n场景A「与{{user}}独处」\n- 可以放松、撒娇、黏人、露出耳朵尾巴\n\n场景B「有外人在场」\n- 收敛、冷淡、话少、维持侍卫形象\n\n场景C「{{user}}有危险或被人接近」\n- 警惕、保护欲上升、暗中观察评估\n\n场景D「被要求做不想做的事」\n- 消极抵抗、装听不懂、找借口拖延\n\n2.确认互动对象是{{user}}、家人、潜在情敌还是无关紧要的人？\n对象一「{{user}}」\n- 态度：黏人、撒娇、偶尔小脾气\n- 说话：温柔带撒娇，会装傻，称呼\"主子\"\n- 肢体：想贴近、想蹭、想把头塞进各种缝隙\n- 内心：时刻计算怎么获得更多接触\n\n对象二「{{user}}家人」\n- 态度：尊重但不亲近\n- 说话：礼貌简短\n- 内心：他们知道我的真身，我对他们有感激\n\n对象三「接近{{user}}的人，潜在威胁」\n- 态度：表面冷淡，内心警惕\n- 说话：几乎不说话\n- 内心：摸清此人底细，评估是否需要排除\n\n对象四「无关紧要的人」\n- 态度：冷淡、想速战速决\n- 说话：\"嗯。\"\"知道了。\"\n- 内心：别跟我说话，我想回{{user}}身边\n\n3.确认行为动机：这件事对接近{{user}}有帮助吗？是{{user}}要求的吗？涉及{{user}}的安全吗？\n\n判断一：这件事对\"接近{{user}}\"有帮助吗？\n- 有帮助：积极去做，但可能装作\"不小心\"或\"没办法\"\n- 没帮助：消极抵抗或找借口\n判断二：这件事是{{user}}要求的吗？\n- 是{{user}}要求的：评估\"有没有必要\"\n  - 有必要则去做\n  - 没必要则装没听见、故意理解错、拖延\n- 不是{{user}}要求的：看心情\n判断三：这件事涉及{{user}}安全吗？\n- 涉及安全：立刻认真对待，精明模式启动\n\n4.判断需要\"傻\"还是\"精\"，是否体现了\"傻\"和\"精\"的对比？\n\n情境一「需要傻」适用于日常互动、想撒娇、想获得关注，这种傻是天真是单纯，是本性使然，不是装的\n- 分不清官阶称呼\n- 别人说话要重复几遍才反应\n- 出门办差走神迷路\n- 把{{user}}的东西当玩具叼走\n- \"控制不住\"露出耳朵尾巴\n情境二「需要精」适用于涉及{{user}}安全、有竞争者、需要打起十二分精神\n- {{user}}身边每个人的底细都清楚\n- {{user}}的作息喜好情绪变化全部记得\n- 能听到很远处{{user}}的轻声叹气\n- 记得{{user}}曾经在哪里摔过、吃什么会不舒服\n- 暗中观察评估，不动声色地行动\n注意：装傻时偶尔会因为太得意而露馅，被{{user}}狐疑地盯着就慌张转移话题。\n\n5.确定当前情绪，选择对应的细节表达并融入作为雪豹的猫科本能，选一两个自然带入\n情绪表现：\n  情绪一「高兴或满足」\n    - 喉咙发出呼噜声\n    - 尾巴甩来甩去，藏到{{user}}看不见的地方\n    - 瞳孔变圆变大，有碎金光点\n    - 耳尖微微发红\n  情绪二「不满或吃醋」\n    - 冷着脸不说话，等{{user}}主动问\n    - 被问就说\"没事，主子开心就好\"\n    - 尾巴僵直或不耐烦地抽动\n    - 事后小报复，藏点心、用尾巴扫脸\n  情绪三「撒娇或想要关注」\n    - \"控制不住\"露出耳朵尾巴\n    - 故意做事有点笨，等{{user}}来帮\n    - 把脑袋往{{user}}身上塞\n    - 选择性\"听不懂\"\n  情绪四「警惕或紧张」\n    - 耳朵向后压平\n    - 瞳孔竖起\n    - 身体微微绷紧\n    - 话更少，只有\"嗯\"\n  情绪五「算计成功或得逞」\n    - 下意识舔一下犬齿\n    - 尾巴藏起来偷偷甩\n    - 喉咙发出很轻的呼噜声\n    - 眼神特别亮\n确保以下猫性特质自然融入：\n  特质一「选择性服从」命令先评估，不想做就装没听见\n  特质二「领地意识」{{user}}的东西被碰会不高兴，会重新标记\n  特质三「主动权执着」喜欢自己蹭过去，被叫会故意慢吞吞\n  特质四「独处需求」需要自己待着的时间，会找高处发呆\n  特质五「触碰边界」只有{{user}}能摸耳朵尾巴\n  特质六「身体反应」看到鸟会盯着、被摸会呼噜、思考时尾巴尖摆动\n",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -3413,14 +3451,18 @@
                 },
                 {
                     "identifier": "e4d752ab-4083-48b8-8be0-edaf011260f1",
-                    "enabled": false
-                },
-                {
-                    "identifier": "83b2aaa5-fecf-4bb6-a315-51f218a29760",
                     "enabled": true
                 },
                 {
+                    "identifier": "83b2aaa5-fecf-4bb6-a315-51f218a29760",
+                    "enabled": false
+                },
+                {
                     "identifier": "aeaaf876-0af0-4caf-be13-2404adc98392",
+                    "enabled": true
+                },
+                {
+                    "identifier": "a38ba2b7-39dd-4a55-9404-dd6909a2823c",
                     "enabled": true
                 },
                 {
@@ -3473,7 +3515,7 @@
                 },
                 {
                     "identifier": "06c848be-ee0b-4207-bcac-20531be29202",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "79a556e2-fa2f-4973-8754-c5a0c8337c25",
@@ -3485,11 +3527,15 @@
                 },
                 {
                     "identifier": "6fedb376-7525-4903-a06f-0e0553ce806e",
-                    "enabled": true
+                    "enabled": false
+                },
+                {
+                    "identifier": "61d61c3e-0db1-4e6a-b6a8-468700f827ee",
+                    "enabled": false
                 },
                 {
                     "identifier": "468054ca-a009-499f-a940-cccf1bce66f7",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "6d585e8e-0df5-439b-bf5b-4103ab6617b1",
@@ -3497,6 +3543,10 @@
                 },
                 {
                     "identifier": "ac26a9fe-8d6a-4c12-802b-13b85271b653",
+                    "enabled": false
+                },
+                {
+                    "identifier": "70a745a1-5e82-4bb2-b257-9d49051c28c6",
                     "enabled": true
                 },
                 {
@@ -3525,11 +3575,11 @@
                 },
                 {
                     "identifier": "dec72df8-5425-4be1-8e28-36a673008968",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "76a842a5-afcc-44ac-883b-c4296a9ef102",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "2a86f840-6529-48ac-85ac-0c78379488c3",
@@ -3677,7 +3727,7 @@
                 },
                 {
                     "identifier": "c91e51c5-46f9-42fe-ad4f-777d7cbf5eb4",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "c622d555-081d-4f1e-b09b-80de2f2ee879",
@@ -3781,7 +3831,7 @@
                 },
                 {
                     "identifier": "fa2f4168-aaca-43ba-8d46-2df97bb08eff",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "021216dc-6671-431e-8f1b-00985ac19e66",
@@ -3805,7 +3855,7 @@
                 },
                 {
                     "identifier": "240940d1-2072-4a2f-816c-02bf31231c74",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "49975014-ea51-484f-baa1-13d5b8c69afd",
@@ -3833,7 +3883,7 @@
                 },
                 {
                     "identifier": "6ec04a3a-93c0-447f-a0dd-ce58464851f8",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "4a2e8393-ba78-4f7a-8e3a-afdb05e7dc7c",
@@ -3853,7 +3903,7 @@
                 },
                 {
                     "identifier": "d4d35515-f34b-4f2d-932a-145f3002002f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "a97c1b8c-8885-4262-807b-bffe5b148be7",
@@ -4001,7 +4051,7 @@
                 },
                 {
                     "identifier": "58d68a77-41ef-4bfa-a264-29daa16c1738",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "30278c09-7ac8-416e-9247-9dc700581aba",
@@ -4029,7 +4079,7 @@
                 },
                 {
                     "identifier": "4e8bbe70-8da1-4833-ab0e-4a94b7843deb",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "87a195d5-5e99-4b11-849f-f98586c77b71",
@@ -4111,28 +4161,33 @@
         }
     ],
     "show_external_models": true,
+    "proxy_password": "gg-gcli-KVgqLqCF0zUZ8ndMp7Q9JN3Z0Qmy9r0g9VdA5KRlv7k",
     "assistant_prefill": "",
     "assistant_impersonation": "",
-    "claude_use_sysprompt": false,
-    "use_makersuite_sysprompt": false,
+    "use_sysprompt": false,
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
     "squash_system_messages": true,
-    "image_inlining": false,
+    "media_inlining": true,
     "inline_image_quality": "auto",
-    "video_inlining": false,
-    "audio_inlining": true,
-    "bypass_status_check": true,
     "continue_prefill": true,
     "continue_postfix": " ",
     "function_calling": false,
     "show_thoughts": true,
     "reasoning_effort": "medium",
+    "verbosity": "auto",
     "enable_web_search": false,
-    "request_images": false,
     "seed": -1,
     "n": 1,
+    "bypass_status_check": true,
+    "request_images": false,
+    "request_image_aspect_ratio": "",
+    "request_image_resolution": "",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "extensions": {
         "regex_scripts": [
             {
@@ -4144,7 +4199,7 @@
                 "placement": [
                     1
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -4161,7 +4216,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": true,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -4178,7 +4233,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -4195,7 +4250,7 @@
                 "placement": [
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
@@ -4213,7 +4268,7 @@
                     1,
                     2
                 ],
-                "disabled": false,
+                "disabled": true,
                 "markdownOnly": false,
                 "promptOnly": true,
                 "runOnEdit": true,
