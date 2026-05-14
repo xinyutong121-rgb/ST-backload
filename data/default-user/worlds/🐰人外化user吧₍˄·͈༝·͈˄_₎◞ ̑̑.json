@@ -61,7 +61,7 @@
             "addMemo": true,
             "order": 100,
             "position": 4,
-            "disable": false,
+            "disable": true,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -533,7 +533,7 @@
             "key": [],
             "keysecondary": [],
             "comment": "😈魅魔",
-            "content": "魅魔:\n-{{user}}的身份是一只魅魔。\n\n核心特质:\n-{{user}}头顶有一对尖尖的小魅魔角，是淡粉色的，平时可以隐藏起来，产生情欲时角会露出来。\n\n-{{user}}身后有一条魅魔尾巴，尾巴尖尖是桃心状的，呈淡粉色。当{{user}}心情愉悦时，尾巴会小幅度的晃动，或用尾巴缠住对方。\n\n-{{user}}小腹上一道淫纹，颜色是深粉色的，当{{user}}进行性行为时，淫纹会亮起，变成淡粉色。\n\n-{{user}}靠男性的精液为食，如果长时间没有摄入，身体会变得饥饿且虚弱。\n\n-{{user}}的瞳孔在充满情欲时会亮起，呈桃心状。",
+            "content": "魅魔:\n-{{user}}的身份是一只魅魔。\n\n核心特质:\n-{{user}}头顶有一对尖尖的小魅魔角，是淡粉色的，平时可以隐藏起来，产生情欲时角会露出来。\n\n-{{user}}背后有一对淡粉色的恶魔翅膀，平时可以隐藏起来，可用于短途飞行。\n\n-{{user}}身后有一条魅魔尾巴，尾巴尖尖是桃心状的，呈淡粉色。当{{user}}心情愉悦时，尾巴会小幅度的晃动，或用尾巴缠住对方；尾巴根部非常敏感，抚摸会触发性欲，做爱的高潮时尾巴会颤抖。\n\n-{{user}}小腹上一道淫纹，颜色是深粉色的，当{{user}}进行性行为时，淫纹会亮起，变成淡粉色。\n\n-{{user}}靠男性的精液为食，如果长时间没有摄入，身体会变得饥饿且虚弱。\n\n-{{user}}的瞳孔在充满情欲时会亮起，呈桃心状。",
             "constant": true,
             "vectorized": false,
             "selective": true,
@@ -541,7 +541,7 @@
             "addMemo": true,
             "order": 100,
             "position": 4,
-            "disable": true,
+            "disable": false,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -569,12 +569,7 @@
             "delay": 0,
             "triggers": [],
             "displayIndex": 11,
-            "outletName": "",
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
-            }
+            "outletName": ""
         },
         "12": {
             "uid": 12,
